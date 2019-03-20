@@ -1,0 +1,156 @@
+/* FORMULARIO */
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], textarea {
+
+    width: 50%;
+    padding: 12px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: cadetblue;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: cornflowerblue
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+#principal {
+	width: 670px;
+	margin: 20px 10px 50px 50px;	
+	float: left;
+	display:inline;
+	}
+
+#auxiliar {
+	width:245px;
+	float:right;
+	margin-top:0;
+	margin-bottom:50px;
+	background:#fff url('imagens/bg-auxiliar.jpg') repeat-x 0 0;
+	min-height:500px;
+	}
+
+* html #auxiliar {
+	height:500px;
+	}
+dl, dd {
+	margin:0;
+	padding:0;
+	}
+h2 {font-size:20px;}
+
+#auxiliar dl {
+	margin-top:50px;
+	}
+#auxiliar dt {
+	color:#0056a6;
+	font-weight:bold;
+	font-size:14px;
+	margin:20px 0 5px 0;
+	padding-left:40px;
+	}
+#auxiliar dd {
+	margin:2px 0;
+	}
+#auxiliar dd a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	padding-left:40px;
+	}
+#auxiliar dd a:hover {
+	background:#fff url('imagens/bullet.gif') 15px no-repeat;
+	color:#f60;
+	}
+/* estilos para para p&aacute;gina contato */
+form#contato label, form#contato textarea {display:block;}
+form#contato form {width:400px;}
+form#contato input {width:250px;}
+form#contato input#ddd {width:30px;}
+form#contato input#telefone {width:200px;}
+form#contato input#enviar{width:auto;}
+form#contato textarea {width:380px; height:140px;} 
+
+form#contato #ddd-telefone {width:254px;}
+form#contato div.um {float:left;}
+form#contato div.dois {float:right;}
+
+
+form#contato label {margin-top:10px;}
+form#contato select {margin-bottom:25px;}
+form#contato input#enviar {margin-top:10px;}
+div.um, div.dois {margin-bottom:10px;}
+
+form#contato  {
+ width:450px;
+ margin-top:30px;
+ }
+form#contato fieldset {
+	padding:10px 25px; 
+	border:none;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	}
+form#contato legend {
+	padding:1px 10px;
+	border:1px solid #999;
+	}
+form#contato label span {color:#c30;}
+form#contato legend {color:#f60;}
+form#contato input, form#contato select,
+form#contato textarea {border:1px solid #999;}
+dt {
+	color:#f60; 
+	font-weight:bold;
+	font-size:14px;
+	margin-bottom:5px;
+
+/* Limpar flutua após as colunas */
+
+
+
+/* Layuot responsivo - quando a tela tem menos de 600px de largura, 
+coloque as duas colunas empilhadas uma em 
+cima da outra em vez de ficarem próxima umas das outras */
+ @media screen and (max-width: 600px) {
+       .col-25, .col-75, input[type=submit] {
+           width: 100%;
+           margin-top: 0;
+    }
+  }
+}
